@@ -42,7 +42,7 @@ def main():
     Age = st.text_input("How old are you?")
     Height = st.text_input("What is your height?")
     Weight = st.text_input("What is your weight?")
-    Duration = st.text_input("The duration of your regular exercise?")
+    Duration = st.text_input("For how long do you exercise?")
     Heart_Rate = st.text_input("What is your heart rate?")
     Body_Temp = st.text_input("What is your body temperature?")
     
