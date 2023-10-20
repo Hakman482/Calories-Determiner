@@ -8,6 +8,7 @@ Created on Fri Oct 20 10:26:12 2023
 import numpy as np
 import pickle
 import streamlit as st
+import math
 
 # loading the saved model
 loaded_model = pickle.load(open("trained_model.sav","rb"))
@@ -24,7 +25,7 @@ def calories_prediction(input_data):
 
     prediction = loaded_model.predict(my_reshaped)
     
-    return f"You burnt {prediction[0]} calories today"
+    return f"You burnt {math.ceil(prediction[0])} calories today"
 
 
 
