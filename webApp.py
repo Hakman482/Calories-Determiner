@@ -18,7 +18,7 @@ loaded_model = pickle.load(open("trained_model.sav","rb"))
 def calories_prediction(input_data):
 
     #change input data to numpy array
-    input_data_as_numpy_array = np.asarray(input_data)
+    input_data_as_numpy_array = np.asarray(input_data, dtype=object)
 
     my_reshaped = input_data_as_numpy_array.reshape(1,7)
 
